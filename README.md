@@ -13,11 +13,12 @@ The template includes the following:
 
 To get started writing a Lua plugin, I recommend reading the [nvim-lua-guide][nvim-lua-guide].
 
+## Scope
 
-Things you should avoid:
+Anything that the majority of plugin authors will want to have is in scope of
+this starter template. Anything that is controversial is out-of-scope.
 
-- Automatically setting up global mappings. Instead prefer a `.setup {}` function where users can opt-in to default mappings, or let them configure the mappings on their own.
-- To be extended ...
+---
 
 
 The remainder of the README is text that can be preserved in your plugin:
