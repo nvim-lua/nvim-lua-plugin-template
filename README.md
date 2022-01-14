@@ -5,9 +5,9 @@ This repository is a template for Neovim plugins written in Lua.
 The intention is that you use this template to create a new repository where you then adapt this readme and add your plugin code.
 The template includes the following:
 
-- Github workflows to run linters and tests
+- GitHub workflows to run linters and tests
 - Minimal test setup
-- editorconfig
+- EditorConfig
 - A .luacheckrc
 
 
