@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        if: env.LUAROCKS_API_KEY != null
       - name: Luarocks Upload
         uses: nvim-neorocks/luarocks-tag-release@v4
         if: env.LUAROCKS_API_KEY != null
