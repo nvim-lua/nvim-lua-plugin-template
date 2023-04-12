@@ -18,6 +18,12 @@ To get started writing a Lua plugin, I recommend reading the [nvim-lua-guide][nv
 Anything that the majority of plugin authors will want to have is in scope of
 this starter template. Anything that is controversial is out-of-scope.
 
+
+## Template License
+
+The template itself is licensed under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+The template doesn't include a LICENSE file. You should add one after creating your repository.
+
 ---
 
 
