@@ -1,0 +1,20 @@
+---
+name: "Release"
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  luarocks-release:
+    runs-on: ubuntu-latest
+    name: Luarocks Release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        if: env.LUAROCKS_API_KEY != null
+      - name: Luarocks Upload
+        uses: nvim-neorocks/luarocks-tag-release@v5
+        if: env.LUAROCKS_API_KEY != null
+        env:
+          LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}

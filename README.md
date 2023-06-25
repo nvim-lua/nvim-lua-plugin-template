@@ -6,6 +6,9 @@ The intention is that you use this template to create a new repository where you
 The template includes the following:
 
 - GitHub workflows to run linters and tests
+- Packaging of tagged releases and upload to [LuaRocks](https://luarocks.org/)
+  if a [`LUAROCKS_API_KEY`](https://luarocks.org/settings/api-keys) is added
+  to the [GitHub Actions secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
 - Minimal test setup
 - EditorConfig
 - A .luacheckrc
