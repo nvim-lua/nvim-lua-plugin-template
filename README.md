@@ -14,7 +14,8 @@ The template includes the following:
 - A .luacheckrc
 
 
-To get started writing a Lua plugin, I recommend reading the [nvim-lua-guide][nvim-lua-guide].
+To get started writing a Lua plugin, I recommend reading `:help lua-guide` and
+`:help write-plugin`.
 
 ## Scope
 
