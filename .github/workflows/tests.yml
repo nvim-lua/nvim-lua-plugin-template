@@ -16,27 +16,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - run: date +%F > todays-date
-      - name: Restore cache for today's nightly.
-        uses: actions/cache@v2
-        with:
-          path: _neovim
-          key: ${{ runner.os }}-x64-${{ hashFiles('todays-date') }}
-      - name: Setup neovim
-        uses: rhysd/action-setup-vim@v1
-        with:
-          neovim: true
-          version: ${{ matrix.neovim_version }}
-
-      - name: Setup Lua
-        uses: leso-kn/gh-actions-lua@master
-        with:
-          luaVersion: "5.1"
-
-      - name: Setup Luarocks
-        uses: hishamhm/gh-actions-luarocks@master
-        with:
-          luarocksVersion: "3.11.0"
-
       - name: Run tests
-        run: luarocks test --local
+        uses: nvim-neorocks/nvim-busted-action@v1
+        with:
+          nvim_version: ${{ matrix.neovim_version }}
