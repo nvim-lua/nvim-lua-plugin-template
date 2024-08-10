@@ -74,6 +74,12 @@ luarocks test spec/path_to_file.lua --local
 busted spec/path_to_file.lua
 ```
 
+If you see an error like `module 'busted.runner' not found`:
+
+```bash
+eval $(luarocks path --no-bin)
+```
+
 [rockspec-format]: https://github.com/luarocks/luarocks/wiki/Rockspec-format
 [luarocks]: https://luarocks.org
 [luarocks-api-key]: https://luarocks.org/settings/api-keys
