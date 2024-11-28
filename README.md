@@ -80,6 +80,10 @@ If you see an error like `module 'busted.runner' not found`:
 eval $(luarocks path --no-bin)
 ```
 
+For this to work you need to have Lua 5.1 set as your default version for
+luarocks. If that's not the case you can pass `--lua-version 5.1` to all the
+luarocks commands above.
+
 [rockspec-format]: https://github.com/luarocks/luarocks/wiki/Rockspec-format
 [luarocks]: https://luarocks.org
 [luarocks-api-key]: https://luarocks.org/settings/api-keys
